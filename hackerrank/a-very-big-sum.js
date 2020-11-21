@@ -13,4 +13,3 @@ function aVeryBigSum(ar) {
     ar.forEach(item => total+=item);
     return total;
     }
-    
