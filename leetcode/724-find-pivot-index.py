@@ -9,7 +9,7 @@
 # If there are multiple pivot indexes, you should return the left-most pivot index.
 
 class Solution:
-    def pivotIndex(self, nums: List[int]) -> int:
+    def pivotIndex(self, nums):
 
         totalSum = sum(nums)
         runningSum = 0
@@ -26,3 +26,7 @@ class Solution:
                 return i
 
         return -1
+
+
+object_A = Solution()
+print(object_A.pivotIndex([1, 2, 3, 1, 1, 1]))
