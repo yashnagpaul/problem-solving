@@ -16,8 +16,22 @@
 
 class Solution:
     def plusOne(self, digits):
-        stringify = ''.join(digits)
+        # map through the array,
+        # convert digits into strings in order to join all the characters, and
+        # combine all elements into a single string
+        stringify = ''.join(list(map(str, digits)))
+
+        # now, convert that result into an integer
         numerified = int(stringify)
+
+        # add one
         numerified = numerified + 1
+
+        # convert the answer back into a string
         stringified = str(numerified)
-        return str.split(stringified)
+
+        # finally, to make sure the answer's length == the length of the original parameter
+        # add leading zeroes to our final answer if needed
+        # loop through that string and convert each character into an integer,
+        # and place them in an array
+        return [int(char) for char in stringified.zfill(len(digits))]
