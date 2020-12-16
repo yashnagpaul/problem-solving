@@ -11,7 +11,7 @@
 
 let kidsWithCandies = function(candies, extraCandies) {
     let answerArr = [];
-    for (i=0; i < candies.length; i++){
+    for (let i=0; i < candies.length; i++){
         (candies[i] + extraCandies) >= Math.max(...candies) ? answerArr.push(true) : answerArr.push(false);
     }
     return answerArr;

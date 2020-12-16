@@ -12,8 +12,8 @@
 
 var findMaxConsecutiveOnes = function(nums) {
     let i = 0;
-    oneCounter = 0;
-    currentHighest = 0;
+    let oneCounter = 0;
+    let currentHighest = 0;
     while (i < nums.length) {
        if (nums[i] == 1){
            oneCounter+=1;

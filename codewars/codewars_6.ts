@@ -7,7 +7,7 @@
 
 function solution(number){
     let answer = [];
-    for(i=0; i < number; i++){
+    for(let i=0; i < number; i++){
       (i % 3 == 0 || i % 5 == 0) && answer.push(i);
     }
     let sum = 0;
